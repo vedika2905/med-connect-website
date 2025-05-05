@@ -33,6 +33,10 @@ Med Connect is a medical resource website that connects patients to doctors thro
 - Backend implementation for appointment booking.
 - Enhanced UI/UX for a better user experience.
 
+## Collaborators
+- [Vedika](https://github.com/vedika2905)
+- [Mansi ](https://github.com/mansi1122006)
+
 ## Contributing
 Feel free to fork the repo and contribute if you'd like to help improve the project.
 
