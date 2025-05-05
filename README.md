@@ -4,6 +4,12 @@ Med Connect is a medical resource website that visually connects patients to doc
 
 Med Connect is a medical resource website that connects patients to doctors through an interactive body map. Users can click on different organs or body parts to view diseases related to that area, along with doctor availability and OPD schedules.
 
+
+## How to Run
+1. Navigate to:
+   https://vedika2905.github.io/med-connect-website/homeee.html
+
+   
 ## Features
 - Interactive image map of the human body
 - Lists of diseases related to each organ/body part
@@ -12,6 +18,7 @@ Med Connect is a medical resource website that connects patients to doctors thro
 ## Work in Progress
 - **Booking Appointments**: Currently not implemented (will be added with the backend).
 - **Doctor Information**: Placeholder data for demonstration purposes.
+  
 
 ## Technologies Used
 - HTML
