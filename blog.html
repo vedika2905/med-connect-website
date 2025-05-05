@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med-Connect</title>
+    <style>
+    /* Basic Styling */
+       /* Animation styles */
+       *{
+        margin:0;
+        font-family: serif;
+        font-weight: bold;
+       }
+       .header {
+      /*background-image:url(th\ \(1\).jpeg);*/
+      
+      background-color:rgb(37, 90, 90);
+      padding: 40px;
+      text-align:center;
+      width:100%;
+      background-size:100%;
+    }
+       .heading {
+      animation-name: example;
+      animation-duration:4s;
+      font-size:45px;
+      text-align: center;
+      animation-iteration-count: infinite;
+      
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+      
+    }
+    /* Navbar Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 0.7rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s {
+    
+font-size:16px;
+font-weight: bold;
+color:red;
+padding: 0.2em;
+text-align:center;
+width:100%;
+
+}
+
+marquee{
+    width:100%;
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 1rem;
+    
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    
+}
+
+.nav-link:hover {
+    color:#4e4e4e;
+    background-color:white;
+
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0.5rem;
+    display: none;
+    border-radius: 0.25rem;
+    box-shadow:0 0 10px #010816;
+}
+
+.dropdown-menu .dropdown-item {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item a {
+    color: rgb(250, 246, 246);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius:0.25 rem;
+
+}
+
+.dropdown-menu .dropdown-item a:hover {
+    background-color:white;
+    color:black;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+@keyframes example {
+      from {color: rgb(8, 7, 7);}
+      to {color: rgb(249, 249, 227);}
+    }
+    
+.image-container {
+  text-align: center; /* Aligns content within the container to the right */
+  /* OR */
+  margin-left: auto; /* Pushes the image to the right by automatically setting the left margin */
+  /* Optional: Add some spacing around the image */
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+
+
+/* Background Image */
+body {
+    background-color:#000000; /* Replace 'your-image.jpg' */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green background */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Contenttyling */
+main {
+    padding: 2rem;
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+}
+
+.intro {
+    text-align: center;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color:rgb(37, 90, 90);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font: size 25px;
+  color:white
+}
+.social-icons {
+      font-size: 24px;
+    }
+    .social-icons a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+    }
+    .social-icons a:hover {
+      color: #0073e6;
+    }
+    /* Blog Section Styling */
+.blog-section {
+    background-color:#7c7474;
+    padding: 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-family: "PT Serif", serif;
+}
+
+.blog-post {
+    background-color:white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.post-content {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="s">
+        <marquee>
+            <span>
+               IN CASE OF  QUERY PLEASE CONTACT :8927492736 / 8927284738 OR medcoonect29@gmail.com
+            </span>
+        </marquee>
+    </div>
+</nav>
+    
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            
+            <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle">RESOURCES</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="FAQs.html">FAQs</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="HELP.html" class="nav-link">HELP-DESK</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link">SIGN UP</a>
+            </li>
+            <li class="nav-item">
+                <a href="Login.html" class="nav-link">LOGIN</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <!--<a href="elbow.html" style="float: left; margin-left: 10px;"><-Diseases</a>-->
+        <h1 class="heading" >Med-Connect</h1>
+    </div>
+
+    <section class="blog-section">
+        <h2 class="blog-title">Latest Blog Posts</h2>
+        <div class="blog-post">
+            <h3 class="post-title">"The Role of Doctors in Patient Empowerment"
+            </h3>
+            <p class="post-date">Posted on: October 7, 2024</p>
+            <p class="post-content">
+                Patient empowerment is a crucial aspect of healthcare, enabling individuals to take charge of their well-being and make informed decisions. Doctors play a vital role in empowering patients, fostering a collaborative relationship that promotes better health outcomes.
+            </p>
+            <a href="" class="read-more">Read more</a>
+        </div>
+        
+        <div class="blog-post">
+            <h3 class="post-title">"The Importance of Mental Health Awareness"</h3>
+            <p class="post-date">Posted on: September 28, 2024</p>
+            <p class="post-content">
+                Mental health has become a key focus in healthcare systems around the world. This post highlights the importance of mental health awareness and resources available for those in need.
+            </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    
+        <div class="blog-post">
+            <h3 class="post-title">"The future of Healthcare:Experts Insights and Healthcare"</h3>
+            <p class="post-date">Posted on: September 20, 2024</p>
+            <p class="post-content">
+                The healthcare landscape is undergoing a significant transformation, driven by technological advancements, shifting patient expectations, and evolving economic models. The future of healthcare promises to be more personalized, preventive, and patient-centered.
+
+            </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </section>
+    
+    
+

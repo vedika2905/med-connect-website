@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  
+    <title>Med-Connect</title>
+    <style>
+        *{
+            margin:0;
+            font-family:serif;
+            font-weight:bold;
+        }
+    /* Basic Styling */
+       /* Animation styles */
+       body{
+        background-color:#7c7474;
+       }
+       .header {
+      /*background-image:url(th\ \(1\).jpeg);*/
+      
+      background-color:rgb(37, 90, 90);
+      padding: 10px;
+      text-align:center;
+      width:100%;
+      background-size:100%;
+    }
+       .heading {
+      animation-name: example;
+      animation-duration:4s;
+      font-size:45px;
+      text-align: center;
+      animation-iteration-count: infinite;
+      
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+      
+    }
+    /* Navbar Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding:0.7rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s {
+    
+font-size:16px;
+font-weight: bold;
+color:red;
+padding: 0.2em;
+text-align:center;
+width:100%;
+
+}
+
+marquee{
+    width:100%;
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 1rem;
+    
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right {
+    margin-left: auto;
+    list-style-type:none;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    
+}
+
+.nav-link:hover {
+    color:#4e4e4e;
+    background-color:white;
+
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0.5rem;
+    display: none;
+    border-radius: 0.25rem;
+    box-shadow:0 0 10px #060606;
+}
+
+.dropdown-menu .dropdown-item {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius:0.25 rem;
+
+}
+
+.dropdown-menu .dropdown-item a:hover {
+    background-color:white;
+    color:black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.container {
+    padding:0;
+    margin-top:2%;
+    margin-left:17%;
+    position: center;
+    display: flex;
+    width: 1000px;
+    height:650px;
+    background-color:white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    width:100%;
+}
+
+.left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Styling for the input fields */
+input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px; /* Same font size for all inputs */
+            font-family: Arial, sans-serif; /* Make sure all inputs use the same font */
+            color: #333; /* Same color for input text */
+            border: 1px solid #ccc; /* Same border styling */
+            border-radius: 5px; /* Optional border-radius */
+        }
+    
+.right-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #777;
+    margin-bottom: 30px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+
+
+    
+
+
+
+label {
+    text-align:left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+label[for="email"] {
+        font-size: 16px; /* Increases font size */
+        font-weight: bold; /* Makes the text bold */
+        color: #333;; /* Changes text color */
+    }
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    color:red;
+    text-decoration: none;
+    font-size:16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:grey;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color:rgb(53, 53, 227);
+    /* Change background color on hover */
+    transform: scale(1.05);
+}
+
+.or-section {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.or-section span {
+    margin: 0 auto;
+}
+
+.social-login {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.google-login {
+    background-color: white;
+}
+
+.apple-login {
+    background-color: black;
+    color: white;
+}
+* {
+    margin:0;
+}
+.social-login:hover {
+    background-color: #f9f9f9;
+}
+    /* Animation styles */
+    .heading {
+      animation-name: example;
+      animation-duration:4s;
+      font-size:45px;
+      animation-iteration-count: infinite;
+      
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+      
+    }
+    @keyframes example {
+      from {color: rgb(8, 7, 7);}
+      to {color: rgb(249, 249, 227);}
+    }
+</style>
+
+</head>
+
+<body>
+    
+<nav class="navbar">
+    <div class="s">
+        <marquee>
+            <span>
+               IN CASE OF  QUERY PLEASE CONTACT :8927492736 / 8927284738 OR medcoonect29@gmail.com
+            </span>
+        </marquee>
+    </div>
+</nav>
+
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="homeee.html" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle">RESOURCES</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="HELP.html" class="nav-link">HELP-DESK</a>
+            </li>
+        </ul>
+            <ul class="navbar-right">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">LOGIN</a>
+                </li>
+            </ul>
+        
+    </nav>
+    
+    
+    <div class="container">
+        <div class="left-section">
+            <img  class="left-section img"src="wp6320115.webp" alt="Background Image">
+        </div>
+        <div class="right-section">
+            <div class="login-form">
+                <h1 class="heading" >Med-Connect</h1>
+        
+                <p style="font-size:18px;">Please enter your details:</p>
+                <form>
+                    <label for="first-name"> First Name</label>
+                    <input type="text" id="first-name"  required>
+                    <br>
+                    <label for="Last-name">Last Name</label>
+                    <input type="text" id="last-name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password"> Create Password</label>
+                    <input type="password" id="password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required>
+
+                    <!--<div class="options">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>-->
+                    <button type="submit">SIGN UP</button>
+                   <h4>Already have an account? <a href="login.html" style="color: brown;">LOGIN HERE</a></h4>
+                </form>
+            </div>
+            </div>
+            </body>
+</html>
+            
+
+
+

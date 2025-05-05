@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Human Body Parts</title>
+  <style>
+    /* CSS styles here */
+     /* CSS styles here */
+     *{
+      margin:0;
+     }
+     body {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+body:before {
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom:0;
+      width:100%;
+      height:100%;
+      background-image:url(digestive.jpg);
+      background-size:93%;
+      background-position: center;
+      background-attachment: fixed;
+      filter: blur(3px);
+      z-index: -1;
+    }
+    
+    .header {
+      background-color: rgb(47,90,90);
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .header a {
+      color: #fff;
+      text-decoration: none;
+      float: left;
+    }
+
+
+    .body-part {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #6d5f5f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .part-name {
+      font-size: 24px;
+      color: #292626;
+      margin-bottom: 10px;
+    }
+    
+    .diseases {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+    }
+    
+    .diseases li {
+      padding: 10px;
+      border-bottom: 1px solid #f0f0f0;
+      font-weight: bold;
+    }
+    
+    .diseases li:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .diseases li:last-child {
+      border-bottom: none;
+    }
+     /* Animation styles */
+     .heading {
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+
+      font-size: 45px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+
+    }
+    
+    @keyframes example {
+      from {color: rgb(8, 7, 7);}
+      to {color: rgb(249, 249, 227);}
+    }
+
+  </style>
+</head>
+<body class="body">
+    <div class="header">
+        <a href="homeee.html" style="float:left;"><img src="home.png" width="30px" height="30px" style="margin:0"></a>
+       <h1 class="heading">Med-Connect</h1>
+        
+      </div>
+    
+  <!--<h1 style="text-align: center;">Med-Connect</h1>-->
+  <h1 style="text-align: center; font-style: italic; font-weight: 300px; background-color: #333;color: #fff; border:2px solid black;" class="sub-header">Explore Related Diseases</h1>
+  
+
+  
+  <div class="body-part">
+    <h2 class="part-name"><b>Small Intestine Diseases</b></h2>
+    <ul class="diseases">
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Celliac Disease</li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Crohn's Disease </li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Intestinal Obstuction</li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Mala Absorption Syndromes</li></a>
+        
+      </ul>
+    </div>
+    <div class="body-part">
+        <h2 class="part-name"><b>Large Intestine Diseases</b></h2>
+        <ul class="diseases">
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Ulcerative Colitis</li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Crohn's Disease</li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Colon's Canner</li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Canner</li></a>
+        <a href="digestivedoc.html" style="text-decoration: none"><li>Anal Canner</li></a>
+        </ul>
+    </div>
+    <div class="body-part">
+        <h2 class="part-name"><b>Rectum Diseases</b></h2>
+        <ul class="diseases">
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Cancer</li></a>
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Anal Cancer</li></a>
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Prolapse</li></a>
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Abscess</li></a>
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Structure</li></a>
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Neuroendocrine Tumors</li></a>
+            <a href="digestivedoc.html" style="text-decoration: none"><li>Rectal Melanoma</li></a>
+        </ul>
+    </div>
+    <div class="body-part">
+      <h2><b>Blood related Diseases</b></h2>
+      <ul class="diseases">
+      <a href="blooddoc.html" style="text-decoration: none"><li>Anemia</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Iron Deficiency Anemia</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>VItamin Deficiency Anemia</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Diabetes</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Hypertension</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Bleeding Disorders</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Blood Clots</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Sickle Cell diseases</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Thalassemia</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Blood Cancer</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Clotting Disorder</li></a>
+      <a href="blooddoc.html" style="text-decoration: none"><li>Platelet disorder</li></a>
+            </ul>
+          </div>
+
+   
+
+<!-- Add more body part sections here -->
+  
+</body>
+</html>

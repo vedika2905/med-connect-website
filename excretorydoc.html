@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Human Body Parts</title>
+  <style>
+    /* CSS styles here */
+     /* CSS styles here */
+     body {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+body:before {
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom:0;
+      width:100%;
+      height:100%;
+      background-image:url(o.jpeg);
+      background-size:100%;
+      background-position: center;
+      background-attachment: fixed;
+      filter: blur(10px);
+      z-index: -1;
+    }
+*{
+  margin:0;
+}
+.header {
+  background-color: rgb(47,90,90);
+      padding: 30px;
+      text-align: center;
+      width:100%;
+      background-size:100%;
+    }
+    
+    .header a {
+      color: #121111;
+      text-decoration: none;
+      float: left;
+    }
+         /* Animation styles */
+         .heading {
+      animation-name: example;
+      animation-duration:4s;
+      font-size:45px;
+      animation-iteration-count: infinite;
+      
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+      
+    }
+    .opd {
+        background-color: #333;
+        padding:8px;
+        text-align: center;
+        color:#fff ;
+    }
+    .text {
+      border-radius:10px;
+      border:2px solid rgb(2, 13, 13);
+        text-decoration: none;
+        text-align: center;
+        padding:6px;;
+        background-color: rgb(201, 152, 88);
+        
+    }
+    .tablehead {
+      border:2px solid;
+      border-radius: 10px;
+      margin-top:5px;
+      text-align:left;
+      text-decoration:none;
+      padding:8px;
+
+    }
+    
+    
+    @keyframes example {
+      from {color: rgb(8, 7, 7);}
+      to {color: rgb(249, 249, 227);}
+    }
+    .table {
+      width: 100%;
+      overflow-x: auto;
+    }
+    
+    .table table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    .table th, .table td {
+      border: 1px solid #777474;
+      padding: 10px;
+      text-align: center;
+      /*font-size:14px;
+      font-weight:30px;*/
+    }
+    
+    .table th {
+      background-color: #71aded;
+      font-size:18 px;
+      font-weight:50px;
+    }
+    .table td {
+      font-size:14 px;
+      font-weight:bold;
+      
+      
+    }
+
+</style>
+<body class="body">
+
+    <div class="header">
+       <!--<a href="elbow.html" style="float: left; margin-left: 10px;"><-Diseases</a>-->
+       <h1 class="heading" >Med-Connect</h1>
+        
+      
+    
+  <!--<h1 style="text-align: center;">Med-Connect</h1>-->
+  
+  
+    </div>
+  <div class="text">
+  <h2 style="color:black; font-style: oblique;" >OPD SCHEDULE</h2>
+  </div>
+  <div class="tablehead">
+  <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. KASHYAPI BHALCHANDRA</b>MBBS MS, DNB (General Surgery), MCh, DNB (GENITO URINARY SURGERY), Research fellow in UroOncology</h4>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Days</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+      </tr>
+      <tr>
+        <td>Hospital Name</td>
+        <td style="color: brown;">Dinanath hospital</td>
+        <td style="color: brown;">Mai Mangeshkar Hospital</td>
+        <td style="color: brown;">Shree hospital</td>
+        <td style="color: brown;">Shaswat Hospital</td>
+        <td style="color: brown;">Bharati Hospital</td>
+        <td style="color: brown;">Sahyadri Hospital</td>
+        <td style="color: brown;">Kulkarni Hospital</td>
+        
+      </tr>
+      <tr>
+        <td>Appointment Availability</td>
+        <td>10:00AM-01:00PM</td>
+        <td>10:00AM-01:00PM (Pvt Opd)</td>
+        <td>10:00AM-01:00PM</td>
+        <td>10:00AM-01:00PM</td>
+        <td>10:00AM-01:00PM</td>
+        <td>Not Available</td>
+        <td>Not Available</td>
+      </tr>
+      <tr>
+        <td>Contact No</td>
+        <td>035-84267866</td>
+        <td>085-89374366</td>
+        <td>026-72483366</td>
+        <td>025-58397366</td>
+        <td>056-84397866</td>
+        <td>023-83289966</td>
+        <td>045-92738303</td>
+        
+      </tr>
+      <tr>
+        <td>Book Appointment</td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+      </tr>
+    </table>
+    </div>
+  </div>
+  <div class="tablehead">
+    <h4 style="padding:2px; color:rgb(146, 96, 12);"><b style="color:navy; font-size: large;">Dr. TAMHANKAR ASHWIN SUNIL V</b> MCh Urology, DNB Urology </h4>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Days</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+        <tr>
+          <td>Hospital Name</td>
+          <td style="color: brown;">Dinanath hospital</td>
+          <td style="color: brown;">Mai Mangeshkar Hospital</td>
+          <td style="color: brown;">Shree hospital</td>
+          <td style="color: brown;">Shaswat Hospital</td>
+          <td style="color: brown;">Bharati Hospital</td>
+          <td style="color: brown;">Sahyadri Hospital</td>
+          <td style="color: brown;">Kulkarni Hospital</td>
+          
+        </tr>
+        <tr>
+          <td>Appointment Availability</td>
+          <td>11:00AM-02:00PM</td>
+          <td>12:00PM-04:00PM (Pvt Opd)</td>
+          <td>10:00AM-01:00PM</td>
+          <td>Not Available</td>
+          <td>10:00AM-12:00PM</td>
+          <td>Not Available</td>
+          <td>02:00PM-05:00PM</td>
+        </tr>
+        <tr>
+          <td>Contact No</td>
+          <td>032-33467866</td>
+          <td>085-32723366</td>
+          <td>786-72483366</td>
+          <td>021-83997366</td>
+          <td>904-13458636</td>
+          <td>892-37284566</td>
+          <td>527-92827303</td>
+          
+        </tr>
+        <tr>
+        <td>Book Appointment</td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        <td><button type="button" class="btn btn-success">Book</button></td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <div class="tablehead">
+      <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. SHIVDE SUBODH R</b>MBBS MS, DNB,MCH(URO), FRCS(URO), FRCS(GLASG.), FRCS(EDIN)</h4>
+      <div class="table">
+        <table>
+          <tr>
+            <th>Days</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td>Hospital Name</td>
+            <td style="color: brown;">Dinanath hospital</td>
+            <td style="color: brown;">Mai Mangeshkar Hospital</td>
+            <td style="color: brown;">Shree hospital</td>
+            <td style="color: brown;">Shaswat Hospital</td>
+            <td style="color: brown;">Bharati Hospital</td>
+            <td style="color: brown;">Sahyadri Hospital</td>
+            <td style="color: brown;">Kulkarni Hospital</td>
+            
+          </tr>
+          <tr>
+            <td>Appointment Availability</td>
+            <td>10:00AM-01:00PM</td>
+            <td>12:00PM-04:00PM </td>
+            <td>11:00AM-01:00PM(pvt Opd)</td>
+            <td>10:00AM-1:00PM</td>
+            <td>Not Available</td>
+            <td>Not Available</td>
+            <td>Not Available</td>
+          </tr>
+          <tr>
+            <td>Contact No</td>
+            <td>042-09374393</td>
+            <td>052-28934639</td>
+            <td>234-82734934</td>
+            <td>026-84357366</td>
+            <td>907-13904636</td>
+            <td>930-79304566</td>
+            <td>837-93844303</td>
+            
+          </tr>
+          <tr>
+            <td>Book Appointment</td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            <td><button type="button" class="btn btn-success">Book</button></td>
+            </tr>
+        </table>
+        </div>
+      </div>
+      <div class="tablehead">
+        <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. DATE JAYDEEP ARUN</b>MBBS MS, MCH (URO), DNB(URO)</h4>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Days</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr>
+              <td>Hospital Name</td>
+              <td style="color: brown;">Dinanath Hospital</td>
+              <td style="color: brown;">Mai Mangeshkar Hospital</td>
+              <td style="color: brown;">Shree hospital</td>
+              <td style="color: brown;">Shaswat Hospital</td>
+              <td style="color: brown;">Bharati Hospital</td>
+              <td style="color: brown;">Sahyadri Hospital</td>
+              <td style="color: brown;">Kulkarni Hospital</td>
+              
+            </tr>
+            <tr>
+              <td>Appointment Availability</td>
+              <td>11:00AM-01:00PM</td>
+              <td>12:00PM-02:00PM </td>
+              <td>Not Available</td>
+              <td>Not Available</td>
+              <td>10:00AM-12:00PM</td>
+              <td>01:00AM-02:00PM</td>
+              <td>02:00PM-05:00PM</td>
+            </tr>
+            <tr>
+              <td>Contact No</td>
+              <td>011-89326434</td>
+              <td>027-38936482</td>
+              <td>032-39274823</td>
+              <td>021-89038450</td>
+              <td>078-28926484</td>
+              <td>056-29478274</td>
+              <td>292-28978293</td>
+              
+            </tr>
+            <tr>
+              <td>Book Appointment</td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              <td><button type="button" class="btn btn-success">Book</button></td>
+              </tr>
+          </table>
+          </div>
+        </div>
+        <div class="tablehead">
+          <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. BHAVE SHIRISH SURESH</b>MBBS MS, MCH (URO), DNB(URO)</h4>
+          <div class="table">
+            <table>
+              <tr>
+                <th>Days</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+              </tr>
+              <tr>
+                <td>Hospital Name</td>
+                <td style="color: brown;">Deenanath hospital</td>
+                <td style="color: brown;">Sasoon Hospital</td>
+                <td style="color: brown;">Shree hospital</td>
+                <td style="color: brown;">Ruby Hospital</td>
+                <td style="color: brown;">Bharati Hospital</td>
+                <td style="color: brown;">K.E.M Hospital</td>
+                <td style="color: brown;">Minerva Hospital</td>
+                
+              </tr>
+              <tr>
+                <td>Appointment Availability</td>
+                <td>10:00AM-01:30PM</td>
+                <td>10:00AM-02:00PM </td>
+                <td>10:00AM-01:15PM</td>
+                <td>10:00AM-02:30PM</td>
+                <td>10:00AM-04:00PM</td>
+                <td>10:00AM-03:30PM</td>
+                <td>Not Available</td>
+              </tr>
+              <tr>
+                <td>Contact No</td>
+                <td>035-84267866</td>
+                <td>081-83374365</td>
+                <td>023-72383367</td>
+                <td>045-58397468</td>
+                <td>056-84397864</td>
+                <td>024-83284966</td>
+                <td>042-92733303</td>
+                
+              </tr>
+              <tr>
+                <td>Book Appointment</td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                <td><button type="button" class="btn btn-success">Book</button></td>
+                </tr>
+            </table>
+            </div>
+          </div>
+        
+          <div class="tablehead">
+            <h4 style="padding:2px; color:rgb(146, 96, 12);"><b style="color:navy; font-size: large;">Dr. SHROTRI RAJESH</b>MBBS MS(GENERAL SURG.) DNB(UROLOGY)</h4>
+            <div class="table">
+              <table>
+                <tr>
+                  <th>Days</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+                </tr>
+                <tr>
+                  <td>Hospital Name</td>
+                  <td style="color: brown;">Shree hospital</td>
+                  <td style="color: brown;">Ruby Hospital</td>
+                  <td style="color: brown;">Deenanath hospital</td>
+                  <td style="color: brown;">Minerva Hospital</td>
+                  <td style="color: brown;">Bharati Hospital</td>
+                  <td style="color: brown;">Sasoon Hospital</td>
+                  <td style="color: brown;">K.E.M Hospital</td>
+                  
+                </tr>
+                <tr>
+                  <td>Appointment Availability</td>
+                  <td>10:00AM-01:15PM</td>
+                  <td>10:00AM-04:00PM</td>
+                  <td>Not Available</td>
+                  <td>10:00AM-01:30PM</td>
+                  <td>10:00AM-02:30PM</td>
+                  <td>10:00AM-03:30PM</td>
+                  <td>10:00AM-02:00PM </td>
+                </tr>
+                <tr>
+                  <td>Contact No</td>
+                  <td>035-84267866</td>
+                  <td>023-72383367</td>
+                  <td>024-83284966</td>
+                  <td>081-83374365</td>
+                  <td>042-92733303</td>
+                  <td>056-84397864</td>
+                  <td>045-58397468</td>
+                  
+                </tr>
+                <tr>
+                  <td>Book Appointment</td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  <td><button type="button" class="btn btn-success">Book</button></td>
+                  </tr>
+              </table>
+              </div>
+            </div>
+            
+          
+            <div class="tablehead">
+              <h4 style="padding:2px; color:rgb(146, 96, 12);"><b style="color:navy; font-size: large;">Dr. DESHMUKH HRISHIKESH</b>MBBS M.S.(Gen. Surg), DNB(Urology)</h4>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>Days</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                  </tr>
+                  <tr>
+                    <td>Hospital Name</td>
+                    <td style="color: brown;">Sanjivni hospital</td>
+                    <td style="color: brown;">Ruby Hospital</td>
+                    <td style="color: brown;">Poona hospital</td>
+                    <td style="color: brown;">Minerva Hospital</td>
+                    <td style="color: brown;">Bharati Hospital</td>
+                    <td style="color: brown;">City Hospital</td>
+                    <td style="color: brown;">K.E.M Hospital</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Appointment Availability</td>
+                    <td>10:00AM-01:15PM</td>
+                    <td>10:00AM-04:00PM</td>
+                    <td>10:00AM-02:30PM</td>
+                    <td>Not Available</td>
+                    <td>10:00AM-01:30PM</td>
+                    <td>Not Available</td>
+                    <td>10:00AM-02:00PM </td>
+                  </tr>
+                  <tr>
+                    <td>Contact No</td>
+                    <td>081-83374365</td>
+                    <td>023-72383367</td>
+                    <td>024-83284966</td>
+                    <td>042-92733303</td>
+                    <td>035-84267866</td>
+                    <td>045-58397468</td>
+                    <td>056-84397864</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Book Appointment</td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    <td><button type="button" class="btn btn-success">Book</button></td>
+                    </tr>
+                </table>
+                </div>
+              </div>
+
+              <div class="tablehead">
+                <h4 style="padding:2px; color:rgb(146, 96, 12);"><b style="color:navy; font-size: large;">Dr. VALSANGKAR ROHAN SATISH</b>MBBS MS ( Gen. Surgery ), M.Ch. ( Urology ), Diploma in Laparoscopic Urology ( Univ. of Strasbourg, France)</h4>
+                <div class="table">
+                  <table>
+                    <tr>
+                      <th>Days</th>
+                      <th>Mon</th>
+                      <th>Tue</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th>Sat</th>
+                      <th>Sun</th>
+                    </tr>
+                    <tr>
+                      <td>Hospital Name</td>
+                      <td style="color: brown;"  >Shree hospital</td>
+                      <td style="color: brown;">Deenanath hospital</td>
+                      <td style="color: brown;">Bharati Hospital</td>
+                      <td style="color: brown;">Minerva Hospital</td>
+                      <td style="color: brown;">K.E.M Hospital</td>
+                      <td style="color: brown;">Ruby Hospital</td>
+                      <td style="color: brown;">Sasoon Hospital</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Appointment Availability</td>
+                      <td>10:00AM-01:15PM</td>
+                      <td>10:00AM-04:00PM</td>
+                      <td>Not Available</td>
+                      <td>10:00AM-01:30PM</td>
+                      <td>10:00AM-02:30PM</td>
+                      <td>Not Available</td>
+                      <td>10:00AM-02:00PM </td>
+                    </tr>
+                    <tr>
+                      <td>Contact No</td>
+                      <td>023-72383367</td>
+                      <td>035-84267866</td>
+                      <td>042-92733303</td>
+                      <td>056-84397864</td>
+                      <td>024-83284966</td>
+                      <td>045-58397468</td>
+                      <td>081-83374365</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Book Appointment</td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      <td><button type="button" class="btn btn-success">Book</button></td>
+                      </tr>
+                  </table>
+                  </div>
+                </div>
+                <div class="tablehead">
+                  <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. DESHMUKH NINAD SUBHASH</b>MBBS M. S.,ASTS </h4>
+                  <div class="table">
+                    <table>
+                      <tr>
+                        <th>Days</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                      </tr>
+                      <tr>
+                        <td>Hospital Name</td>
+                        <td style="color: brown;">K.E.M Hospital</td>
+                        <td style="color: brown;">Sasoon Hospital</td>
+                        <td style="color: brown;">Minerva Hospital</td>
+                        <td style="color: brown;">Deenanath hospital</td>
+                        <td style="color: brown;">Ruby Hospital</td>
+                        <td style="color: brown;">Shree hospital</td>
+                        <td style="color: brown;">Bharati Hospital</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Appointment Availability</td>
+                        <td>10:00AM-01:30PM</td>
+                        <td>Not Available </td>
+                        <td>2:00PM-03:15PM</td>
+                        <td>10:00AM-02:30PM</td>
+                        <td>10:00AM-04:00PM</td>
+                        <td>10:00AM-03:30PM</td>
+                        <td>Not Available</td>
+                      </tr>
+                      <tr>
+                        <td>Contact No</td>
+                        <td>035-84267866</td>
+                        <td>081-83374365</td>
+                        <td>023-72383367</td>
+                        <td>045-58397468</td>
+                        <td>056-84397864</td>
+                        <td>024-83284966</td>
+                        <td>042-92733303</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Book Appointment</td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        <td><button type="button" class="btn btn-success">Book</button></td>
+                        </tr>
+                    </table>
+                    </div>
+                  </div>
+                  <div class="tablehead">
+                      <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. ZIRPE DINESH KUNDALIK</b>MBBS MS General Surgery,DNB GI Surgery  </h4>
+                      <div class="table">
+                        <table>
+                          <tr>
+                            <th>Days</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                          </tr>
+                          <tr>
+                            <td>Hospital Name</td>
+                            <td style="color: brown;">K.E.M Hospital</td>
+                            <td style="color: brown;">Sasoon Hospital</td>
+                            <td style="color: brown;">Minerva Hospital</td>
+                            <td style="color: brown;">Deenanath hospital</td>
+                            <td style="color: brown;">Ruby Hospital</td>
+                            <td style="color: brown;">Shree hospital</td>
+                            <td style="color: brown;">Bharati Hospital</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Appointment Availability</td>
+                            <td>10:00AM-01:30PM</td>
+                            <td>Not Available </td>
+                            <td>2:00PM-03:15PM</td>
+                            <td>10:00AM-02:30PM</td>
+                            <td>10:00AM-04:00PM</td>
+                            <td>10:00AM-03:30PM</td>
+                            <td>Not Available</td>
+                          </tr>
+                          <tr>
+                            <td>Contact No</td>
+                            <td>035-84267866</td>
+                            <td>081-83374365</td>
+                            <td>023-72383367</td>
+                            <td>045-58397468</td>
+                            <td>056-84397864</td>
+                            <td>024-83284966</td>
+                            <td>042-92733303</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Book Appointment</td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            <td><button type="button" class="btn btn-success">Book</button></td>
+                            </tr>
+                        </table>
+                        </div>
+                      </div>
+      
+                      <div class="tablehead">
+                          <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. Chanda Suvarnkar</b>Obstetrician and Gynaecologist  </h4>
+                          <div class="table">
+                            <table>
+                              <tr>
+                                <th>Days</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                              </tr>
+                              <tr>
+                                <td>Hospital Name</td>
+                                <td style="color: brown;">K.E.M Hospital</td>
+                                <td style="color: brown;">Sasoon Hospital</td>
+                                <td style="color: brown;">Minerva Hospital</td>
+                                <td style="color: brown;">Deenanath hospital</td>
+                                <td style="color: brown;">Ruby Hospital</td>
+                                <td style="color: brown;">Shree hospital</td>
+                                <td style="color: brown;">Bharati Hospital</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>Appointment Availability</td>
+                                <td>10:00AM-01:30PM</td>
+                                <td>Not Available </td>
+                                <td>2:00PM-03:15PM</td>
+                                <td>10:00AM-02:30PM</td>
+                                <td>10:00AM-04:00PM</td>
+                                <td>10:00AM-03:30PM</td>
+                                <td>Not Available</td>
+                              </tr>
+                              <tr>
+                                <td>Contact No</td>
+                                <td>035-84267866</td>
+                                <td>081-83374365</td>
+                                <td>023-72383367</td>
+                                <td>045-58397468</td>
+                                <td>056-84397864</td>
+                                <td>024-83284966</td>
+                                <td>042-92733303</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>Book Appointment</td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                <td><button type="button" class="btn btn-success">Book</button></td>
+                                </tr>
+                            </table>
+                            </div>
+                          </div>
+                          <div class="tablehead">
+                            <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr Kanse Pallavi</b>Obstetrician and Gynaecologist</h4>
+                            <div class="table">
+                              <table>
+                                <tr>
+                                  <th>Days</th>
+                                  <th>Mon</th>
+                                  <th>Tue</th>
+                                  <th>Wed</th>
+                                  <th>Thu</th>
+                                  <th>Fri</th>
+                                  <th>Sat</th>
+                                  <th>Sun</th>
+                                </tr>
+                                <tr>
+                                  <td>Hospital Name</td>
+                                  <td style="color: brown;">Sasoon Hospital</td>
+                                  <td style="color: brown;">Minerva Hospital</td>
+                                  <td style="color: brown;">Deenanath hospital</td>
+                                  <td style="color: brown;">K.E.M Hospital</td>
+                                  <td style="color: brown;">Ruby Hospital</td>
+                                  <td style="color: brown;">Shree hospital</td>
+                                  <td style="color: brown;">Bharati Hospital</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Appointment Availability</td>
+                                  <td>10:00AM-01:30PM</td>
+                                  <td>Not Available </td>
+                                  <td>10:00AM-04:00PM</td>
+                                  <td>2:00PM-03:15PM</td>
+                                  <td>10:00AM-03:30PM</td>
+                                  <td>Not Available</td>
+                                  <td>10:00AM-02:30PM</td>
+                                </tr>
+                                <tr>
+                                  <td>Contact No</td>
+                                  <td>035-84267866</td>
+                                  <td>081-83374365</td>
+                                  <td>023-72383367</td>
+                                  <td>045-58397468</td>
+                                  <td>056-84397864</td>
+                                  <td>024-83284966</td>
+                                  <td>042-92733303</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td>Book Appointment</td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  <td><button type="button" class="btn btn-success">Book</button></td>
+                                  </tr>
+                              </table>
+                              </div>
+                            </div>
+                            <div class="tablehead">
+                                <h4 style="padding:2px; color:rgb(146, 96, 12)"><b style="color:navy; font-size: large;">Dr. DESHMUKH RANJIT V</b>MBBS M.S. (ORTHO), MRCS, FRCS, Fellowship in Paediatric Orthopedic surgery</h4>
+                                <div class="table">
+                                  <table>
+                                    <tr>
+                                      <th>Days</th>
+                                      <th>Mon</th>
+                                      <th>Tue</th>
+                                      <th>Wed</th>
+                                      <th>Thu</th>
+                                      <th>Fri</th>
+                                      <th>Sat</th>
+                                      <th>Sun</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Hospital Name</td>
+                                      <td style="color: brown;">Deenanath hospital</td>
+                                      <td style="color: brown;">Shree hospital</td>
+                                      <td style="color: brown;">Minerva Hospital</td>
+                                      <td style="color: brown;">K.E.M Hospital</td>
+                                      <td style="color: brown;">Sasoon Hospital</td>
+                                      <td style="color: brown;">Bharati Hospital</td>
+                                      <td style="color: brown;">Ruby Hospital</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Appointment Availability</td>
+                                      <td>Not Available </td>
+                                      <td>10:00AM-03:30PM</td>
+                                      <td>10:00AM-01:30PM</td>
+                                      <td>10:00AM-02:30PM</td>
+                                      <td>2:00PM-03:15PM</td>
+                                      <td>Not Available</td>
+                                      <td>10:00AM-04:00PM</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Contact No</td>
+                                      <td>035-84267866</td>
+                                      <td>081-83374365</td>
+                                      <td>023-72383367</td>
+                                      <td>045-58397468</td>
+                                      <td>056-84397864</td>
+                                      <td>024-83284966</td>
+                                      <td>042-92733303</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>Book Appointment</td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      <td><button type="button" class="btn btn-success">Book</button></td>
+                                      </tr>
+                                  </table>
+                                  </div>
+                                </div>
+                    
+                      
+                
+                        
+                  
+            
+                  
+                
+          

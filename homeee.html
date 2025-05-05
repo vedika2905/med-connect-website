@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Med-Connect</title>
+    <style>
+    /* Basic Styling */
+       /* Animation styles */
+       *{
+        margin:0;
+        font-family: serif;
+        font-weight: bold;
+       }
+       .header {
+      /*background-image:url(th\ \(1\).jpeg);*/
+      
+      background-color:rgb(37, 90, 90);
+      padding: 40px;
+      text-align:center;
+      width:100%;
+      background-size:100%;
+    }
+       .heading {
+      animation-name: example;
+      animation-duration:4s;
+      font-size:45px;
+      text-align: center;
+      animation-iteration-count: infinite;
+      
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+      
+    }
+    /* Navbar Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 0.7rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s {
+    
+font-size:16px;
+font-weight: bold;
+color:red;
+padding: 0.2em;
+text-align:center;
+width:100%;
+
+}
+
+marquee{
+    width:100%;
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 1rem;
+    
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    
+}
+
+.nav-link:hover {
+    color:#4e4e4e;
+    background-color:white;
+
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0.5rem;
+    display: none;
+    border-radius: 0.25rem;
+    box-shadow:0 0 10px #010816;
+}
+
+.dropdown-menu .dropdown-item {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item a {
+    color: rgb(250, 246, 246);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius:0.25 rem;
+
+}
+
+.dropdown-menu .dropdown-item a:hover {
+    background-color:white;
+    color:black;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+@keyframes example {
+      from {color: rgb(8, 7, 7);}
+      to {color: rgb(249, 249, 227);}
+    }
+    
+.image-container {
+  text-align: center; /* Aligns content within the container to the right */
+  /* OR */
+  margin-left: auto; /* Pushes the image to the right by automatically setting the left margin */
+  /* Optional: Add some spacing around the image */
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+
+
+/* Background Image */
+body {
+    background-color:#000000; /* Replace 'your-image.jpg' */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green background */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Contenttyling */
+main {
+    padding: 2rem;
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+}
+
+.intro {
+    text-align: center;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color:rgb(37, 90, 90);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font: size 25px;
+  color:white
+}
+.social-icons {
+      font-size: 24px;
+    }
+    .social-icons a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+    }
+    .social-icons a:hover {
+      color: #0073e6;
+    }
+</style>
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="s">
+        <marquee>
+            <span>
+               IN CASE OF  QUERY PLEASE CONTACT :8927492736 / 8927284738 OR medcoonect29@gmail.com
+            </span>
+        </marquee>
+    </div>
+</nav>
+    
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            
+            <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle">RESOURCES</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="FAQs.html">FAQs</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="HELP.html" class="nav-link">HELP-DESK</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link">SIGN UP</a>
+            </li>
+            <li class="nav-item">
+                <a href="Login.html" class="nav-link">LOGIN</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <!--<a href="elbow.html" style="float: left; margin-left: 10px;"><-Diseases</a>-->
+        <h1 class="heading" >Med-Connect</h1>
+    </div>
+    
+        <main>
+            <section class="intro">
+                
+                <h3 style="text-align:center;">Click On Different Parts Of The Body To Learn More About Them.</h3>
+            </section> 
+            <div class="image-container"> <img src="humananatomy.jpg" alt="Human Anatomy" usemap="#anatomy-map"> 
+            </div>
+        
+
+<map name="anatomy-map">
+	<!-- Head -->
+	<area shape="poly" coords="302,63, 390,123, 380,146, 289,75, 364,65, 394,119, 334,54, 293,69, 353,55, 384,86, 393,116" alt="Head" href="head.html">
+	<area shape="poly" coords="830,71, 890,64, 901,145, 832,67, 901,71, 822,144, 820,76, 848,53, 874,148, 816,145, 908,147" alt="Head" href="head.html">
+
+	<!--eyes-->
+
+<area shape="circle" coords="343,120, 25" alt="Left Eye" href="faceee.html">
+
+<area shape="circle" coords="296,121, 25" alt="Right Eye" href="faceee.html">
+	
+	<!--nose-->
+	<area shape="poly" coords="298,151, 308,120, 325,149, 289,151" alt="Nose" href="faceee.html">
+
+	<!--mouth-->
+	<area shape="poly" coords="338,155, 342,177, 294,177, 294,156" alt="Mouth" href="faceee.html">
+
+	<!--face-->
+	<area shape="poly" coords="376,154, 360,186, 304,195, 282,158, 286,99, 355,99, 381,156" alt="Face" href="face.html">
+
+	<!--neck-->
+	<area shape="poly" coords="311,197, 364,182, 376,233, 281,240, 311,195" alt="Neck" href="neck.html">
+
+	<!--throat system-->
+	<area shape="poly" coords="311,197, 364,182, 376,233, 281,240, 311,195" alt="Neck" href="neck.html">
+
+	<!--heart-->
+	<area shape="poly" coords="288,345, 305,264, 352,266, 373,355, 287,347" alt="Heart" href="heart.html">
+
+	<!--ribs&chest-->
+	<area shape="poly" coords="302,361, 277,442, 261,433, 244,353, 284,251, 364,251, 389,256, 419,281, 434,352, 423,411, 396,453, 364,441, 308,351, 299,367" alt="Ribs" href="ribs.html">
+	
+	<!--liver-->
+	<area shape="poly" coords="355,407, 271,452, 257,415, 274,389, 313,378, 352,387, 365,401, 344,414" alt="Liver" href="liver.html">
+
+	<!--stomach-->
+	<area shape="poly" coords="313,432, 370,391, 409,447, 307,459, 310,432" alt="Stomach" href="stomach.html">
+
+	<!--small intestine-->
+	<area shape="poly" coords="280,471, 375,471, 375,548, 284,551, 276,475" alt="Small Intestine" href="digestive.html">
+
+	<!--large intestine-->
+	<area shape="poly" coords="288,520, 303,532, 280,551, 280,548, 266,534, 276,448, 293,448, 320,466, 353,450, 377,450, 391,469, 392,522, 381,553, 380,549, 364,553, 360,536, 383,514, 374,466, 326,484, 294,486, 284,464, 282,516, 288,518" alt="Large Intestine" href="digestive.html">
+
+	<!--rectum-->
+	<area shape="poly" coords="267,544, 383,537, 375,582, 268,588, 268,544" alt="Rectum" href="digestive.html">
+
+	<!--kidneys-->
+	<area shape="poly" coords="797,408, 916,400, 943,403, 935,475, 793,488, 797,407" alt="Kidneys" href="kidney.html">
+
+	<!--excreatory tract-->
+	<area shape="poly" coords="256,546, 402,548, 400,636, 271,676, 248,544, 372,549" alt="Excreatory Tract" href="excreatorytract.html">
+
+	<!--left-thigh-->
+	<area shape="poly" coords="240,558, 308,585, 284,659, 334,657, 324,792, 243,804, 223,652, 241,560" alt="Left Thigh" href="leg.html">
+	<area shape="poly" coords="761,578, 871,627, 846,796, 769,802, 758,582" alt="Left Thigh" href="leg.html">
+
+
+
+	<!--right-thigh-->
+	<area shape="poly" coords="370,809, 428,806, 444,675, 438,557, 336,611, 335,657, 362,810" alt="Right Thigh" href="leg.html">
+	<area shape="poly" coords="865,657, 973,613, 981,701, 959,806, 882,811, 863,656" alt="Right Thigh" href="leg.html">
+
+
+
+
+	<!--left-elbow-->
+	<area shape="poly" coords="154,438, 204,466, 240,394, 184,371, 153,431" alt="Left Elbow" href="elbow.html">
+    <area shape="poly" coords="978,400, 1033,375, 1063,443, 1005,468, 973,402" alt="Left Elbow" href="elbow.html">
+
+
+
+
+	<!--right-elbow-->
+	<area shape="poly" coords="458,405, 508,381, 548,442, 484,471, 456,396" alt="Right Elbow" href="elbow.html">
+	<area shape="poly" coords="700,367, 755,391, 729,463, 663,443, 697,370" alt="Right Elbow" href="elbow.html">
+
+    <!--left-shoulder-->
+	<area shape="poly" coords="263,375, 182,369, 220,265, 268,234, 291,252, 246,318, 255,375" alt="Left Shoulder" href="hand.html">
+	<area shape="poly" coords="910,219, 895,203, 895,203, 921,227, 952,235, 987,260, 1003,315, 1032,370, 965,397, 915,277, 915,277" alt="Left Shoulder" href="hand.html">
+
+
+
+
+	<!--right-shoulder-->
+	<area shape="poly" coords="464,399, 516,385, 487,332, 490,285, 491,283, 464,232, 393,240, 464,404" alt="Right Shoulder" href="hand.html">
+    <area shape="poly" coords="698,384, 754,401, 788,271, 793,235, 821,224, 783,219, 721,255, 712,332, 697,380" alt="Right Shoulder" href="hand.html">
+
+	<!--left hand-->
+	<area shape="poly" coords="242,386, 139,551, 111,649, 46,633, 78,570, 40,584, 120,515, 156,423, 174,407, 198,315, 209,299, 216,263, 275,232" alt="Left Hand" href="hand.html">
+    <area shape="poly" coords="931,291, 1119,667, 1153,657, 1164,671, 1183,645, 1140,580, 1178,596, 1117,547, 974,245" alt="Left Hand" href="hand.html">
+
+	<!--right-hand-->
+	<area shape="poly" coords="428,324, 540,553, 564,669, 599,673, 610,658, 574,529, 490,328, 492,249, 423,227" alt="Right Hand" href="hand.html">
+	<area shape="poly" coords="764,317, 772,356, 707,499, 674,551, 661,643, 637,648, 624,636, 621,606, 656,478, 670,418, 718,338, 712,296, 747,235" alt="Right Hand" href="hand.html">
+
+	<!--left-knee--> 
+	<area shape="poly" coords="240,761, 323,761, 333,910, 252,923, 244,762" alt="Left Knee" href="knee.html">
+    <area shape="poly" coords="881,772, 970,771, 946,942, 872,945, 881,774" alt="Left Knee" href="knee.html">
+
+
+    <!--right-knee-->
+    <area shape="poly" coords="348,759, 439,757, 436,828, 465,908, 387,937, 382,858, 348,765" alt="Right Knee" href="knee.html">
+    <area shape="poly" coords="761,756, 850,763, 817,904, 744,888, 773,825, 762,749" alt="Right Knee" href="knee.html">
+
+    <!--leftlowerleg&foot-->
+    <area shape="poly" coords="266,865, 330,864, 308,1045, 310,1101, 218,1131, 195,1114, 226,1090, 268,1057, 258,866" alt="Left Lower Leg and Foot" href="leg.html">
+    <area shape="poly" coords="884,892, 952,892, 941,1085, 1002,1107, 1014,1122, 989,1131, 973,1131, 905,1148, 889,1136, 900,1066, 876,974, 875,892" alt="Left Lower Leg and Foot" href="leg.html">
+
+    <!--rightlowerleg&foot-->
+    <area shape="poly" coords="379,890, 456,884, 464,956, 436,1059, 445,1110, 437,1141, 413,1151, 369,1152, 364,1132, 395,1081, 402,1036, 379,911" alt="Right Lower Leg and Foot" href="leg.html">
+    <area shape="poly" coords="749,884, 819,887, 809,1004, 808,1069, 830,1082, 843,1081, 847,1100, 811,1113, 784,1133, 762,1126, 757,1099, 768,1049, 739,971, 731,926, 746,888" alt="Right Lower Leg and Foot" href="leg.html">
+
+    <!--spinal cord-->
+    <area shape="poly" coords="831,155, 882,153, 876,229, 860,369, 884,502, 884,502, 843,510, 828,451, 822,353, 821,282, 839,203, 832,154" alt="Spinal Cord" href="spinal.html">
+
+    <!--blood,skinandbones-->
+    <area shape="poly" coords="
+295,184, 280,151, 281,101, 297,63, 325,47, 364,51, 392,77, 396,136, 386,193, 428,227, 472,243, 498,288, 486,333, 516,388, 537,422, 559,483, 616,656, 605,660, 594,676, 586,678, 563,631, 571,665, 572,662, 564,670, 556,650, 538,581, 542,560, 505,496, 484,464, 456,401, 434,359, 446,386, 425,445, 443,566, 444,760, 430,820, 432,818, 467,899, 463,974, 438,1042, 440,1092, 440,1136, 431,1147, 369,1154, 360,1132, 394,1082, 387,960, 384,867, 332,658, 324,788, 319,847, 337,906, 311,1012, 272,1108, 234,1132, 200,1127, 192,1113, 215,1096, 256,1077, 272,1040, 257,977, 256,930, 259,829, 220,687, 254,454, 246,384, 204,461, 139,551, 113,645, 52,646, 42,627, 82,569, 52,581, 44,572, 100,536, 172,407, 208,308, 212,269, 236,246, 273,232, 284,231, 305,215, 309,195, 298,187"
+alt="Front Body" href="body.html">
+
+
+<area shape="poly" coords="674,411, 696,386, 716,330, 712,281, 735,240, 770,226, 817,196, 817,158, 803,110, 813,75, 849,47, 897,53, 921,93, 922,135, 908,187, 897,200, 889,203, 922,227, 963,235, 990,259, 1005,307, 1001,313, 1023,347, 1034,398, 1076,457, 1108,542, 1176,588, 1177,597, 1161,599, 1136,582, 1181,651, 1162,671, 1138,673, 1112,665, 1075,580, 1061,531, 987,450, 960,377, 948,449, 967,560, 982,657, 965,772, 948,868, 954,982, 937,1080, 975,1097, 1010,1102, 1013,1125, 905,1149, 890,1136, 892,1137, 896,1066, 881,995, 865,933, 880,879, 882,824, 865,690, 841,811, 819,864, 817,970, 805,1019, 807,1065, 831,1084, 839,1082, 845,1097, 823,1112, 810,1112, 792,1129, 765,1132, 757,1121, 765,1094, 763,1071, 768,1041, 733,942, 741,886, 769,822, 760,733, 761,614, 764,515, 780,449, 761,379, 737,435, 707,495, 671,539, 670,537, 675,567, 658,645, 636,650, 625,641, 620,616, 641,539, 673,410"
+alt="Back Body" href="body.html">
+</map>
+
+
+
+        </main>
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="insta.png"></a>
+                <a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="facebook.png"></a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="twiiter.png"></a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><img src="linkdln.png"></a>
+              </div>
+              <p>Follow us on social media</p>
+            <p>&copy; 2024 Human Medical Resources. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
